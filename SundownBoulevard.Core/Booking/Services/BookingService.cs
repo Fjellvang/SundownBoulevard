@@ -36,13 +36,11 @@ namespace SundownBoulevard.Core.Booking.Services
 			var startTimeTicks = time.Ticks;
 			var endTimeTicks = time.AddHours(2).Ticks;
 			var bookedTables = await context.Orders
-				.Where(x => x.Day.Date.Date == date && 
+				.Where(x => x.Day.Date.Date == date &&
 					x.BookingStartTicks <= startTimeTicks && startTimeTicks < x.BookingEndTicks ||
 					x.BookingStartTicks <= endTimeTicks && endTimeTicks < x.BookingEndTicks)
+				.SumAsync(x => x.NumberOfTables);
 				
-				.Select(x => x.NumberOfTables)
-				.CountAsync();
-			var test = context.Orders.Where(x => x.Day.Date == date).ToArray();
 
 			if (bookedTables + requiredTables > settings.TotalTables)
 			{

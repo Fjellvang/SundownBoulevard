@@ -7,8 +7,12 @@ const submitForm = function (e) {
 	e.preventDefault();
 	console.log("hello");
 	const email = document.getElementById('email').value;
+	const hour = document.getElementById('hour').value;
+	const minute = document.getElementById('minute').value;
+	const date = document.getElementById('orderDate').value;
+	const guests = document.getElementById('numberOfGuests').value;
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", `/api/booking/booktable?email=${email}`, true);
+	xhttp.open("POST", `/api/booking/booktable?email=${email}&day=${date}&hour=${hour}&minute=${minute}&numberOfGuests=${guests}`, true);
 	xhttp.send();
 	//fetch("/api/booking/booktable");
 }

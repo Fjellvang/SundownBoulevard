@@ -14,7 +14,15 @@
 			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
 			<div class=" form-row">
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-3">
+					<label for="numberOfGuests">Guests</label>
+					<input class="form-control form-control-sm" type="number" id="numberOfGuests" name="orderDate">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="orderDate">Date</label>
+					<input class="form-control form-control-sm" type="date" id="orderDate" name="orderDate">
+				</div>
+				<div class="form-group col-md-3">
 					<label for="hour">Hour</label>
 					<select id="hour" class="form-control form-control-sm">
 						@for (int i = 16; i <= 22; i++)
@@ -23,10 +31,10 @@
 						}
 					</select>
 				</div>
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-3">
 					<label for="minute">Minute</label>
 					<select id="minute" class="form-control form-control-sm">
-						@for (int i = 0; i < 60; i+=15)
+						@for (int i = 0; i < 60; i += 15)
 						{
 							<option>@i</option>
 						}
