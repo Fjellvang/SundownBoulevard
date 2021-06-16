@@ -24,7 +24,7 @@ namespace SundownBoulevard.Core.Booking.Controllers
 			this.settings = settings.Value;
 		}
 
-		[HttpGet("bookTable")]
+		[HttpPost("bookTable")]
 		public async Task<IActionResult> BookTable(DateTime day, string email, int hour, int minute, int numberOfGuests)
 		{
 			if (day.Date < DateTime.Now.Date)
