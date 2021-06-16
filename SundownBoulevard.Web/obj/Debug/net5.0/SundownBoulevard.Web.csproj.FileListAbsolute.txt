@@ -1,0 +1,148 @@
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\appsettings.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.exe
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.deps.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.runtimeconfig.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.runtimeconfig.dev.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\ref\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.Views.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Web.Views.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Core.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\SundownBoulevard.Core.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.csprojAssemblyReference.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.AssemblyInfoInputs.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.AssemblyInfo.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.csproj.CoreCompileInputs.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.RazorAssemblyInfo.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.RazorAssemblyInfo.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\staticwebassets\SundownBoulevard.Web.StaticWebAssets.Manifest.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\staticwebassets\SundownBoulevard.Web.StaticWebAssets.xml
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\scopedcss\bundle\SundownBoulevard.Web.styles.css
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.TagHelpers.input.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.TagHelpers.output.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.RazorCoreGenerate.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.RazorTargetAssemblyInfo.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.RazorTargetAssemblyInfo.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.Views.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.csproj.CopyComplete
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\ref\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\obj\Debug\net5.0\SundownBoulevard.Web.genruntimeconfig.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\Sundown Boulevard\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\appsettings.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.exe
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.deps.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.runtimeconfig.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.runtimeconfig.dev.json
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\ref\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.Views.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Web.Views.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Core.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\bin\Debug\net5.0\SundownBoulevard.Core.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.csprojAssemblyReference.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.AssemblyInfoInputs.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.AssemblyInfo.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.csproj.CoreCompileInputs.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.RazorAssemblyInfo.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.RazorAssemblyInfo.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\staticwebassets\SundownBoulevard.Web.StaticWebAssets.Manifest.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\staticwebassets\SundownBoulevard.Web.StaticWebAssets.xml
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\scopedcss\bundle\SundownBoulevard.Web.styles.css
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.TagHelpers.input.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.TagHelpers.output.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.RazorCoreGenerate.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.RazorTargetAssemblyInfo.cache
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.RazorTargetAssemblyInfo.cs
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.Views.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.csproj.CopyComplete
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\ref\SundownBoulevard.Web.dll
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.pdb
+C:\Users\Aleks\source\repos\Sundown Boulevard\SundownBoulevard.Web\obj\Debug\net5.0\SundownBoulevard.Web.genruntimeconfig.cache
