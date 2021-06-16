@@ -12,8 +12,15 @@ const submitForm = function (e) {
 	const date = document.getElementById('orderDate').value;
 	const guests = document.getElementById('numberOfGuests').value;
 	const xhttp = new XMLHttpRequest();
+
+	xhttp.onload = function () {
+		const body = document.getElementById("modalBody");
+		body.innerHTML = this.responseText;
+		$('#exampleModal').modal({});
+	}
 	xhttp.open("POST", `/api/booking/booktable?email=${email}&day=${date}&hour=${hour}&minute=${minute}&numberOfGuests=${guests}`, true);
 	xhttp.send();
+
 	//fetch("/api/booking/booktable");
 }
 
