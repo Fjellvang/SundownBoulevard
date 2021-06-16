@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using SundownBoulevard.Core.Booking.Data;
 using SundownBoulevard.Core.Booking.Data.Entities;
 using SundownBoulevard.Core.Common;
@@ -15,10 +16,10 @@ namespace SundownBoulevard.Core.Booking.Services
 		private readonly SundownBoulevardDbContext context;
 		private readonly AppSettings settings;
 
-		public BookingService(SundownBoulevardDbContext context, AppSettings settings)
+		public BookingService(SundownBoulevardDbContext context, IOptions<AppSettings> settings)
 		{
 			this.context = context;
-			this.settings = settings;
+			this.settings = settings.Value;
 		}
 
 		/// <summary>

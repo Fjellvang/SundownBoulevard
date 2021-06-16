@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SundownBoulevard.Core.Booking.Data;
+using SundownBoulevard.Core.Booking.Services;
 using SundownBoulevard.Core.Common;
 using System;
 using System.Collections.Generic;
@@ -27,9 +28,12 @@ namespace Sundown_Boulevard
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddRazorPages();
-			services.Configure<AppSettings>(Configuration.GetSection("Booking"));
+			services.Configure<AppSettings>(Configuration.GetSection("BookingSettings"));
 			services.AddDbContext<SundownBoulevardDbContext>(options =>
 				options.UseSqlServer(Configuration.GetConnectionString("SundownBoulevard")));
+			services.AddControllersWithViews();
+			services.AddTransient<BookingService>();
+
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +60,7 @@ namespace Sundown_Boulevard
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapRazorPages();
+				endpoints.MapControllers();
 			});
 		}
 	}

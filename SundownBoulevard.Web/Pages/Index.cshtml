@@ -5,6 +5,35 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<h1 class="display-4">Welcome</h1>
+	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<form>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+			<div class=" form-row">
+				<div class="form-group col-md-6">
+					<label for="hourInput">Hour</label>
+					<select id="hourInput" class="form-control form-control-sm">
+						@for (int i = 16; i <= 22; i++)
+						{
+							<option>@i</option>
+						}
+					</select>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="minuteInput">Minute</label>
+					<select id="minuteInput" class="form-control form-control-sm">
+						@for (int i = 0; i < 60; i+=15)
+						{
+							<option>@i</option>
+						}
+					</select>
+				</div>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
 </div>

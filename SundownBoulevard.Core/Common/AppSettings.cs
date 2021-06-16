@@ -13,8 +13,11 @@ namespace SundownBoulevard.Core.Common
 		/// </summary>
 		public int TotalTables { get; set; }
 		/// <summary>
-		/// the total hours a table can be booked
+		/// the total hours a table can be booked in hours
 		/// </summary>
-		public int TotalHoursBooked { get; set; }
+		public int TableBookingDuration { get; set; }
+		public int OpeningHour { get; set; }
+		public int ClosingHour { get; set; }
 	}
+
 }
