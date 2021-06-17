@@ -89,13 +89,13 @@ namespace SundownBoulevard.Core.Migrations
             modelBuilder.Entity("SundownBoulevard.Core.Booking.Data.Entities.Order", b =>
                 {
                     b.HasOne("SundownBoulevard.Core.Booking.Data.Entities.Booker", "Booker")
-                        .WithMany()
+                        .WithMany("Orders")
                         .HasForeignKey("BookerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SundownBoulevard.Core.Booking.Data.Entities.Day", "Day")
-                        .WithMany()
+                        .WithMany("Orders")
                         .HasForeignKey("DayId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -103,6 +103,16 @@ namespace SundownBoulevard.Core.Migrations
                     b.Navigation("Booker");
 
                     b.Navigation("Day");
+                });
+
+            modelBuilder.Entity("SundownBoulevard.Core.Booking.Data.Entities.Booker", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("SundownBoulevard.Core.Booking.Data.Entities.Day", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }
