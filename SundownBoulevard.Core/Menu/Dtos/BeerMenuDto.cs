@@ -11,7 +11,7 @@ namespace SundownBoulevard.Core.Menu.Dtos
 
 	public class BeerMenuDto
 	{
-		public Beer[] Property1 { get; set; }
+		public Beer[] Beers { get; set; }
 	}
 
 	public class Beer
@@ -104,10 +104,10 @@ namespace SundownBoulevard.Core.Menu.Dtos
 
 	public class Ingredients
 	{
-		[JsonPropertyName("[]")] 
-		public Malt[] malt { get; set; }
-		[JsonPropertyName("[]")] 
-		public Hop[] hops { get; set; }
+		[JsonPropertyName("malt")]
+		public Malt[] Malt { get; set; }
+		[JsonPropertyName("Hops")] 
+		public Hop[] Hops { get; set; }
 		[JsonPropertyName("yeast")] 
 		public string Yeast { get; set; }
 	}

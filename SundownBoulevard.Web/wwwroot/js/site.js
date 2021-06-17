@@ -5,7 +5,6 @@
 
 const submitForm = function (e) {
 	e.preventDefault();
-	console.log("hello");
 	const email = document.getElementById('email').value;
 	const hour = document.getElementById('hour').value;
 	const minute = document.getElementById('minute').value;
@@ -24,5 +23,20 @@ const submitForm = function (e) {
 	//fetch("/api/booking/booktable");
 }
 
+const PopulateMenu = async function (elementId, endpoint) {
+	const select = document.getElementById(elementId);
+	const response = await fetch(endpoint);
+	const json = await response.json();
+
+	for (let i = 0; i < json.length; i++) {
+		let opt = document.createElement("option");
+		opt.value = json[i].id;
+		opt.innerHTML = json[i].name;
+		select.appendChild(opt);
+	}
+}
+
+PopulateMenu("foodMenu", "/api/menu/getfoodmenu");
+PopulateMenu("beerMenu", "/api/menu/getbeermenu");
 const form = document.getElementById('form');
 form.addEventListener('submit', submitForm);

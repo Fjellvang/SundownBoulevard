@@ -9,11 +9,24 @@
 	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 	<form id="form">
 		<div class="form-group">
-			<label for="email">Email address</label>
-			<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-
-			<div class=" form-row">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="email">Email address</label>
+					<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="foodMenu">Chosen Menu</label>
+					<select id="foodMenu" class="form-control form-control-sm">
+					</select>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="beerMenu">Chosen Beer</label>
+					<select id="beerMenu" class="form-control form-control-sm">
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
 				<div class="form-group col-md-3">
 					<label for="numberOfGuests">Guests</label>
 					<input class="form-control form-control-sm" type="number" id="numberOfGuests" name="orderDate">

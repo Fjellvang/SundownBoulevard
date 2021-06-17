@@ -12,7 +12,7 @@ namespace SundownBoulevard.Core
 	{
 		[JsonPropertyName("idMeal")]
 		public string IdMeal { get; set; }
-		[JsonPropertyName("strMeal ")]
+		[JsonPropertyName("strMeal")]
 		public string StrMeal { get; set; }
 		[JsonPropertyName("strDrinkAlternate")]
 		public string StrDrinkAlternate { get; set; }
@@ -115,6 +115,6 @@ namespace SundownBoulevard.Core
 		[JsonPropertyName("strCreativeCommonsConfirmed")] 
 		public string StrCreativeCommonsConfirmed { get; set; }
 		[JsonPropertyName("dateModified")] 
-		public DateTime DateModified { get; set; }
+		public DateTime? DateModified { get; set; }
 	}
 }

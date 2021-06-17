@@ -18,6 +18,9 @@ namespace SundownBoulevard.Core.Common
 		public int TableBookingDuration { get; set; }
 		public int OpeningHour { get; set; }
 		public int ClosingHour { get; set; }
+
+		public string BeerMenuEndpoint { get; set; }
+		public string FoodMenuEndpoint { get; set; }
 	}
 
 }
