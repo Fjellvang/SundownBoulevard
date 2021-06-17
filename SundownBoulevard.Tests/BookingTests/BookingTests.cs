@@ -64,10 +64,28 @@ namespace SundownBoulevard.Tests.BookingTests
 		}
 
 		[Test]
-		public async Task No_Booking_for_email_return_empty()
+		public async Task No_Booking_for_email_returns_null()
 		{
-			await BookingService.GetBookingsAsync("a@b.dk");
+			var result = await BookingService.GetBookingsAsync("a@b.dk");
+			Assert.IsNull(result);
+		}
+		[Test]
+		public async Task Booking_for_email_returns_sameDay()
+		{
+			var email = "a@b.dk";
+			var requiredTables = 2;
+			var date = new DateTime(2020, 12, 24, 20, 00, 00);
+			var beerMenuId = 14;
+			var foodMenuId = 15;
 
+			await BookingService.PlaceBookingAsync(email, requiredTables, date, beerMenuId, foodMenuId);
+			var result = await BookingService.GetBookingsAsync("a@b.dk");
+			Assert.IsNotNull(result);
+			Assert.AreEqual(email, result.Email);
+			Assert.AreEqual(date, result.Orders.First().Date);
+			Assert.AreEqual(requiredTables, result.Orders.First().NumberOfTables);
+			Assert.AreEqual(beerMenuId, result.Orders.First().ChosenBeer);
+			Assert.AreEqual(foodMenuId, result.Orders.First().ChosenMenu);
 		}
 	}
 }

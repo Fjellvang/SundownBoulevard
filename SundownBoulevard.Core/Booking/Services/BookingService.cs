@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using SundownBoulevard.Core.Booking.Data;
 using SundownBoulevard.Core.Booking.Data.Entities;
+using SundownBoulevard.Core.Booking.Views;
 using SundownBoulevard.Core.Common;
 using System;
 using System.Collections.Generic;
@@ -56,10 +57,40 @@ namespace SundownBoulevard.Core.Booking.Services
 			return (date, startTimeTicks, endTimeTicks);
 		}
 
-		public Task GetBookingsAsync(string email)
+		/// <summary>
+		/// Get orders of a given user by email.
+		/// A similar method could be added for orders by day. 
+		/// Currently this method returns all orders a user has given.
+		/// </summary>
+		/// <param name="email"></param>
+		/// <returns></returns>
+		public async Task<BookingByEmailView> GetBookingsAsync(string email)
 		{
-			throw new NotImplementedException();
-			//context.Bookers.Where(x => x.Email == email)
+			var result = await context.Bookers.Where(x => x.Email == email)
+				.Select(x => new {
+					Email = x.Email,
+					Orders = x.Orders.Select(o => new {
+						o.Day,
+						o.BookingStartTicks,
+						o.ChosenBeerId,
+						o.ChosenMenuId,
+						o.NumberOfTables
+					})
+				}).FirstOrDefaultAsync();
+
+			return result is null ? null : new BookingByEmailView()
+			{
+				Email = result.Email,
+				Orders = result.Orders
+					.Select(x => new OrderView()
+					{
+						ChosenBeer = x.ChosenBeerId,
+						ChosenMenu = x.ChosenMenuId,
+						Date = new DateTime(x.BookingStartTicks),
+						NumberOfTables = x.NumberOfTables
+					})
+					.ToArray()
+			};
 		}
 
 		/// <summary>
