@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SundownBoulevard.Core.Booking.Data;
 
 namespace SundownBoulevard.Core.Migrations
 {
     [DbContext(typeof(SundownBoulevardDbContext))]
-    partial class SundownBoulevardDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210617083340_AddChosenMenu")]
+    partial class AddChosenMenu
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
