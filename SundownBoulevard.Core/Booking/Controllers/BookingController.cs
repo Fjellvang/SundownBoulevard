@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using SundownBoulevard.Core.Booking.Services;
 using SundownBoulevard.Core.Common;
@@ -8,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static SundownBoulevard.Core.Common.Utilities.HttpUtilities;
 
 namespace SundownBoulevard.Core.Booking.Controllers
 {
@@ -30,37 +32,35 @@ namespace SundownBoulevard.Core.Booking.Controllers
 			if (day.Date < DateTime.Now.Date)
 			{
 				//we cannot book in the past
-				return BadRequest();
+				return BadRequestResult("You cannot book in the past");
 			}
 			else if (!email.IsValidEmail())
 			{
 				//supply valid email
-				return BadRequest();
+				return BadRequestResult("please supply a valid email");
 			}
 			else if (0 > minute || minute > 59)
 			{
-				return BadRequest();
+				return BadRequestResult("minute format invalid");
 			}
 			else if(settings.OpeningHour > hour || hour > settings.ClosingHour)
 			{
-				return BadRequest();
+				return BadRequestResult("hour out side of opening hours");
 			}
 			var tablesToBook = (int)Math.Ceiling((double)numberOfGuests / 2);
 			if (tablesToBook > settings.TotalTables)
 			{
-				return BadRequest();
+				return BadRequestResult("Not enough tables in the restaurant to handle your request");
 			}
 
 			var bookingDate = new DateTime(day.Year, day.Month, day.Day, hour, minute, 0);
-			var success = await bookingService.PlaceBookingAsync(email, tablesToBook, bookingDate);
+			var success = await bookingService.PlaceBookingAsync(email, tablesToBook, bookingDate, beerMenu, foodMenu);
 
 			if (success)
 			{
 				return Ok();
 			}
-
-			return BadRequest();
-
+			return BadRequestResult("Sorry the restaurant is fully booked");
 		}
 	}
 }

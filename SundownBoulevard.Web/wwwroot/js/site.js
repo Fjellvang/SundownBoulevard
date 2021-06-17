@@ -18,7 +18,12 @@ const submitForm = function (e) {
 
 	xhttp.onload = function () {
 		const body = document.getElementById("modalBody");
-		body.innerHTML = this.responseText;
+		if (this.status === 200) {
+			body.innerHTML = `Thank you for your order, see you on ${date} at ${hour}:${minute === "0" ? "00" : minute}`;
+		} else {
+			const response = JSON.parse(this.responseText);
+			body.innerHTML = `Booking failed with message:<br>${response.title}`;
+		}
 		$('#exampleModal').modal({});
 	}
 	xhttp.open("POST", `/api/booking/booktable?email=${email}&day=${date}&hour=${hour}&minute=${minute}&numberOfGuests=${guests}&foodMenu=${foodMenu}&beerMenu=${beerMenu}`, true);

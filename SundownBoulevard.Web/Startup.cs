@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,9 +9,11 @@ using Microsoft.Extensions.Hosting;
 using SundownBoulevard.Core.Booking.Data;
 using SundownBoulevard.Core.Booking.Services;
 using SundownBoulevard.Core.Common;
+using SundownBoulevard.Core.Common.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Sundown_Boulevard
@@ -56,6 +59,21 @@ namespace Sundown_Boulevard
 			app.UseRouting();
 
 			app.UseAuthorization();
+
+			//Lazy mans middleware.
+			app.Use(async (context, next) =>
+			{
+				try
+				{
+					await next();
+				}
+				catch (Exception)
+				{
+					context.Response.StatusCode = 400;
+					await context.Response.WriteAsync(JsonSerializer.Serialize(HttpUtilities.BadRequestProblemDetails("An error occured during exection. Staff has been notified"))); // now thats a lie....
+					//TODO: can add logging here.
+				}
+			});
 
 			app.UseEndpoints(endpoints =>
 			{

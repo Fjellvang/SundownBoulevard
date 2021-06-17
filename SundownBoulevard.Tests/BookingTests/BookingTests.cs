@@ -39,16 +39,16 @@ namespace SundownBoulevard.Tests.BookingTests
 		[Test]
 		public async Task Booking_Returns_True()
 		{
-			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now);
+			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now,0,0);
 
 			Assert.IsTrue(result);
 		}
 		[Test]
 		public async Task Booking_Full_Returns_False()
 		{
-			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now);
+			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now,0,0);
 			Assert.IsTrue(result);
-			var result2 = await BookingService.PlaceBookingAsync("a2@b.dk", 10, DateTime.Now);
+			var result2 = await BookingService.PlaceBookingAsync("a2@b.dk", 10, DateTime.Now,0,0);
 			Assert.IsFalse(result2);
 		}
 	}
