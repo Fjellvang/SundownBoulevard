@@ -37,7 +37,7 @@ namespace Sundown_Boulevard
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SundownBoulevardDbContext dbContext)
 		{
 			if (env.IsDevelopment())
 			{
@@ -62,6 +62,7 @@ namespace Sundown_Boulevard
 				endpoints.MapRazorPages();
 				endpoints.MapControllers();
 			});
+			dbContext.Database.Migrate(); // ensure migrations applied
 		}
 	}
 }

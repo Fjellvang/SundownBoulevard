@@ -10,6 +10,10 @@ const submitForm = function (e) {
 	const minute = document.getElementById('minute').value;
 	const date = document.getElementById('orderDate').value;
 	const guests = document.getElementById('numberOfGuests').value;
+
+	const foodMenu = document.getElementById('foodMenu').value;
+	const beerMenu = document.getElementById('beerMenu').value;
+
 	const xhttp = new XMLHttpRequest();
 
 	xhttp.onload = function () {
@@ -17,7 +21,7 @@ const submitForm = function (e) {
 		body.innerHTML = this.responseText;
 		$('#exampleModal').modal({});
 	}
-	xhttp.open("POST", `/api/booking/booktable?email=${email}&day=${date}&hour=${hour}&minute=${minute}&numberOfGuests=${guests}`, true);
+	xhttp.open("POST", `/api/booking/booktable?email=${email}&day=${date}&hour=${hour}&minute=${minute}&numberOfGuests=${guests}&foodMenu=${foodMenu}&beerMenu=${beerMenu}`, true);
 	xhttp.send();
 
 	//fetch("/api/booking/booktable");

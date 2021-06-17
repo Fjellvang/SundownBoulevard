@@ -29,9 +29,8 @@ namespace SundownBoulevard.Core.Booking.Services
 		/// <param name="requiredTables">the number of tables a booking requires.</param>
 		/// <param name="time">booking time</param>
 		/// <returns></returns>
-		public async Task<bool> PlaceBookingAsync(string email, int requiredTables, DateTime time)
+		public async Task<bool> PlaceBookingAsync(string email, int requiredTables, DateTime time, int beerMenu, int foodMenu)
 		{
-
 			var date = time.Date;
 			var startTimeTicks = time.Ticks;
 			var endTimeTicks = time.AddHours(2).Ticks;
@@ -56,7 +55,9 @@ namespace SundownBoulevard.Core.Booking.Services
 				Day = day,
 				BookingStartTicks = startTimeTicks,
 				BookingEndTicks = endTimeTicks,
-				NumberOfTables = requiredTables
+				NumberOfTables = requiredTables,
+				ChosenBeerId = beerMenu,
+				ChosenMenuId = foodMenu
 			});
 
 			await context.SaveChangesAsync();
