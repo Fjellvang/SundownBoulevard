@@ -15,6 +15,13 @@ namespace SundownBoulevard.Core.Booking.Services
 	{
 		private readonly SundownBoulevardDbContext context;
 		private readonly AppSettings settings;
+		//Overload for testing..
+		//TODO: replace with a mock in tests instead..
+		public BookingService(SundownBoulevardDbContext context, AppSettings settings)
+		{
+			this.context = context;
+			this.settings = settings;
+		}
 
 		public BookingService(SundownBoulevardDbContext context, IOptions<AppSettings> settings)
 		{
@@ -22,6 +29,32 @@ namespace SundownBoulevard.Core.Booking.Services
 			this.settings = settings.Value;
 		}
 
+		public Task<int> CalculateBookedTables(DateTime date)
+		{
+			var data = GetDateAndTicksFromDateTime(date);
+			return CalculateBookedTables(data.date, data.startTimeTicks, data.endTimeTicks);
+		}
+		private Task<int> CalculateBookedTables(DateTime date, long startTimeTicks, long endTimeTicks)
+		{
+			return context.Orders
+				.Where(x => x.Day.Date.Date == date &&
+					x.BookingStartTicks <= startTimeTicks && startTimeTicks < x.BookingEndTicks ||
+					x.BookingStartTicks <= endTimeTicks && endTimeTicks < x.BookingEndTicks)
+				.SumAsync(x => x.NumberOfTables);
+		}
+
+		/// <summary>
+		/// helper to get ticks and date from a datetime
+		/// </summary>
+		/// <param name="time"></param>
+		/// <returns></returns>
+		private (DateTime date, long startTimeTicks, long endTimeTicks) GetDateAndTicksFromDateTime(DateTime time)
+		{
+			var date = time.Date;
+			var startTimeTicks = time.Ticks;
+			var endTimeTicks = time.AddHours(2).Ticks;
+			return (date, startTimeTicks, endTimeTicks);
+		}
 		/// <summary>
 		/// Places a booking, return indicate wheter we can book or not
 		/// </summary>
@@ -31,15 +64,8 @@ namespace SundownBoulevard.Core.Booking.Services
 		/// <returns></returns>
 		public async Task<bool> PlaceBookingAsync(string email, int requiredTables, DateTime time, int beerMenu, int foodMenu)
 		{
-			var date = time.Date;
-			var startTimeTicks = time.Ticks;
-			var endTimeTicks = time.AddHours(2).Ticks;
-			var bookedTables = await context.Orders
-				.Where(x => x.Day.Date.Date == date &&
-					x.BookingStartTicks <= startTimeTicks && startTimeTicks < x.BookingEndTicks ||
-					x.BookingStartTicks <= endTimeTicks && endTimeTicks < x.BookingEndTicks)
-				.SumAsync(x => x.NumberOfTables);
-				
+			var (date, startTimeTicks, endTimeTicks) = GetDateAndTicksFromDateTime(time);
+			var bookedTables = await CalculateBookedTables(date, startTimeTicks, endTimeTicks);				
 
 			if (bookedTables + requiredTables > settings.TotalTables)
 			{

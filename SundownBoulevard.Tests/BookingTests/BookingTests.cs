@@ -30,11 +30,6 @@ namespace SundownBoulevard.Tests.BookingTests
 			BookingService = new BookingService(new SundownBoulevardDbContext(options), settings);
 		}
 
-		[Test]
-		public void is_True()
-		{
-			Assert.IsTrue(true);
-		}
 
 		[Test]
 		public async Task Booking_Returns_True()
@@ -50,6 +45,22 @@ namespace SundownBoulevard.Tests.BookingTests
 			Assert.IsTrue(result);
 			var result2 = await BookingService.PlaceBookingAsync("a2@b.dk", 10, DateTime.Now,0,0);
 			Assert.IsFalse(result2);
+		}
+		[Test]
+		public async Task Booking_Zero_tables_Booked_On_Freshday()
+		{
+			var result = await BookingService.CalculateBookedTables(new DateTime(2020, 12, 24, 20, 00, 00));
+			Assert.AreEqual(0, result);
+		}
+
+		[Test]
+		public async Task Booking_Returns_two_tables_booked_when_two_is_booked()
+		{
+			//better to have used a test case, but oh well
+			DateTime now = DateTime.Now;
+			await BookingService.PlaceBookingAsync("asd@asd.dk", 2, now, 0, 0);
+			var result = await BookingService.CalculateBookedTables(now);
+			Assert.AreEqual(2, result);
 		}
 	}
 }
