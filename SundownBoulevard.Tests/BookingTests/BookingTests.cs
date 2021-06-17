@@ -34,16 +34,16 @@ namespace SundownBoulevard.Tests.BookingTests
 		[Test]
 		public async Task Booking_Returns_True()
 		{
-			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now,0,0);
+			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now, 0, 0);
 
 			Assert.IsTrue(result);
 		}
 		[Test]
 		public async Task Booking_Full_Returns_False()
 		{
-			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now,0,0);
+			var result = await BookingService.PlaceBookingAsync("a@b.dk", 10, DateTime.Now, 0, 0);
 			Assert.IsTrue(result);
-			var result2 = await BookingService.PlaceBookingAsync("a2@b.dk", 10, DateTime.Now,0,0);
+			var result2 = await BookingService.PlaceBookingAsync("a2@b.dk", 10, DateTime.Now, 0, 0);
 			Assert.IsFalse(result2);
 		}
 		[Test]
@@ -61,6 +61,13 @@ namespace SundownBoulevard.Tests.BookingTests
 			await BookingService.PlaceBookingAsync("asd@asd.dk", 2, now, 0, 0);
 			var result = await BookingService.CalculateBookedTables(now);
 			Assert.AreEqual(2, result);
+		}
+
+		[Test]
+		public async Task No_Booking_for_email_return_empty()
+		{
+			await BookingService.GetBookingsAsync("a@b.dk");
+
 		}
 	}
 }

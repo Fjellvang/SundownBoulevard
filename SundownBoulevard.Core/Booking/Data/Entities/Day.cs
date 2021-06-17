@@ -10,5 +10,7 @@ namespace SundownBoulevard.Core.Booking.Data.Entities
 	{
 		public int Id { get; set; }
 		public DateTime Date { get; set; }
+
+		public IEnumerable<Order> Orders { get; set; }
 	}
 }

@@ -55,6 +55,13 @@ namespace SundownBoulevard.Core.Booking.Services
 			var endTimeTicks = time.AddHours(2).Ticks;
 			return (date, startTimeTicks, endTimeTicks);
 		}
+
+		public Task GetBookingsAsync(string email)
+		{
+			throw new NotImplementedException();
+			//context.Bookers.Where(x => x.Email == email)
+		}
+
 		/// <summary>
 		/// Places a booking, return indicate wheter we can book or not
 		/// </summary>
