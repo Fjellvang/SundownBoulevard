@@ -1,4 +1,19 @@
-﻿# Sundown boulevard
+﻿# Sundown Boulevard
+
+This is a simple table booking system for an imaginary restaurant SundownBoulevard.
+
+Currently the restaurant has 10 tables, it opens at 16 and closes at 22 and tables will always be booked for 2 hours. Should these requirements change they can be modified in the appsettings section:
+
+```
+    "BookingSettings": {
+        "TotalTables": 10,
+        "TableBookingDuration": 2,
+        "OpeningHour": 16,
+        "ClosingHour": 22,
+        "BeerMenuEndpoint": "https://api.punkapi.com/v2/beers",
+        "FoodMenuEndpoint": "https://www.themealdb.com/api/json/v1/1/random.php"
+    },
+```
 
 #### Technologies:
 * ASP.Net Core 5
@@ -31,4 +46,7 @@ Database migration are applied automatically when you run the project, if the co
 #### Issues And Shortcomings:
 1. A user can place a booking exactly at the closing hour. The restaurant might not find it amusing to stay open for an extra two hours. I recommend the closing hour defined in appsettings
 		are configured to last possible booking hour.
+2. Since only booked tables are stored in the Database, the data of exactly how many guests are arriving is omitted. We deem this okay for now as the waiter will only have had set the table for 1 extra guest.
+    * This could be solved by extending the database, saving the number of guests.
+3. Similar to 2. right now it is assumed  that a table will always only have room for 2 guests. Should this requirement change the code will have to be extended.
 
