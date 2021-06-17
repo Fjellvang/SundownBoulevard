@@ -1,5 +1,8 @@
 ﻿
 
+Issues And Shortcomings:
+	- A user can place a booking exactly at the closing hour. The restaurant might not find it amusing to stay open for an extra two hours. I reccomend the closing hour defined in appsettings
+		are configured to last possible booking hour.
 
 
 Nice to have:
