@@ -13,6 +13,8 @@ namespace SundownBoulevard.Core.Booking.Data.Entities
 		public long BookingEndTicks { get; set; }
 		public int NumberOfTables { get; set; }
 		public int BookerId { get; set; }
+		public int ChosenBeerId { get; set; }
+		public int ChosenMenuId { get; set; }
 		public Booker Booker { get; set; }
 		public int DayId { get; set; }
 		public Day Day { get; set; }
